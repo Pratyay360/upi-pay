@@ -26,4 +26,16 @@
 
 ### For deploying this project online I suggest using vercel as they provide a generous free tire for deploying next.js apps.
 
-### thanks to [inulute](https://github.com/inulute/upi) 
+
+
+
+# Donate Me
+<div>
+<a href="https://pratyayupi.vercel.app" target="_blank"><img src="./upi.svg" width="200" target="_blank"></a>
+<a href="https://paypal.me/pmustafi/" target="_blank"><img src="./paypal.svg" width="200" target="_blank"></a>
+</div>
+
+
+
+
+### cc [inulute](https://github.com/inulute/upi) 
