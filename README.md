@@ -10,7 +10,7 @@
 ### Sample `data.json` file
 
 `
-{   
+{
     "NAME":"Abc Xyz",
     "UPI":"abcxyz@paytm"
 }
