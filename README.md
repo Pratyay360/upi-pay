@@ -9,12 +9,7 @@
 
 ### Sample `data.json` file
 
-`
-{
-    "NAME":"Abc Xyz",
-    "UPI":"abcxyz@paytm"
-}
-`
+`{"NAME":"Abc Xyz","UPI":"abcxyz@paytm"}`
 
 ### For security reasons please make sure to add a upi id wich don't have your phone number like `example@upi`.
 
