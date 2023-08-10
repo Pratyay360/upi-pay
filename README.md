@@ -1,6 +1,8 @@
 # Upi donation
 ## Upi donation is a simple project focused to help collect money from users through upi (this prject is specifically targetted towards Indians)
 
+<img src="./public/screenshot.png" width="500">
+
 # How to customize ?
 
 ## To customize the site according to your data. You just have to fork this repo and add your name and upi id in the `/src/data.json` file.
@@ -38,4 +40,4 @@
 
 
 
-### cc [inulute](https://github.com/inulute/upi) 
+### 💡 Inspiration [inulute](https://github.com/inulute/upi) 
