@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image"
 import data from "../../data.json"
-import { upiqr } from "upiqr";
+import upiqr from "./upiqr"
 
 export default function Qr() {
     const [qrCode, setQrCode] = useState("");
