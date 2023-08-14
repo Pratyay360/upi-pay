@@ -9,12 +9,7 @@
 
 ### Sample `data.json` file
 
-`
-{   
-    "NAME":"Abc Xyz",
-    "UPI":"abcxyz@paytm"
-}
-`
+`{"NAME":"Abc Xyz","UPI":"abcxyz@paytm"}`
 
 ### For security reasons please make sure to add a upi id wich don't have your phone number like `example@upi`.
 
@@ -31,7 +26,7 @@
 
 
 
-# Donate Me
+## Want to support my work
 <div>
 <a href="https://pratyayupi.vercel.app" target="_blank"><img src="https://raw.githubusercontent.com/Pratyay360/Pratyay360/main/upi.svg" width="200" target="_blank"></a>
 <a href="https://paypal.me/pmustafi/" target="_blank"><img src="https://raw.githubusercontent.com/Pratyay360/Pratyay360/main/paypal.svg" width="200" target="_blank"></a>
