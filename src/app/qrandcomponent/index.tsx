@@ -15,8 +15,18 @@ export default function Body() {
     };
     return (
         <>
-            <div className="container ">
-                <div className="qr-container bg1">
+        <script>
+            console.log(`            
+\n ██╗░░░██╗██████╗░██╗
+\n ██║░░░██║██╔══██╗██║
+\n ██║░░░██║██████╔╝██║
+\n ██║░░░██║██╔═══╝░██║
+\n ╚██████╔╝██║░░░░░██║
+\n ░╚═════╝░╚═╝░░░░░╚═╝
+            `);
+        </script>
+            <div className="items-center justify-center align-middle text-center container">
+                <div className="qr-container bg1 items-center justify-center">
                     <div className="border border-zinc-950">
                         <Qr />
                     </div>
