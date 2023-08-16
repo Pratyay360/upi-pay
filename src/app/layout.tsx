@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Upi',
   description: 'Next js app to collect donations via UPI',
+  manifest: '/manifest.webmanifest',
 }
 
 export default function RootLayout({
