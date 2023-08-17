@@ -63,7 +63,6 @@ return new Promise<UpiqrResult>((resolve, reject) => {
 
     var opts ={
         quality: 1.0,
-        errorCorrectionLevel: 'H',
         margin: 3,
         scale:10,
     }
