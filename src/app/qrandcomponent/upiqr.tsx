@@ -61,7 +61,16 @@ return new Promise<UpiqrResult>((resolve, reject) => {
     if (tn !== undefined) intent = buildUrl.call(intent, { tn });
     if (intent !== undefined) intent = intent.substring(0, intent.length - 1);
 
-    QRCode.toDataURL(intent, (err: any, qr: any) => {
+    var opts ={
+        quality: 1.0,
+        type: 'image/webp', // Change the type to "image/png"
+        errorCorrectionLevel: 'H',
+        margin: 3,
+        scale:10,
+    }
+
+
+    QRCode.toDataURL(intent, opts, (err:any , qr:any) => {
         if (err) reject(new Error("Unable to generate UPI QR Code."));
         resolve({ qr, intent });
     });
