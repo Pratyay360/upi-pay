@@ -63,7 +63,7 @@ return new Promise<UpiqrResult>((resolve, reject) => {
 
     var opts ={
         quality: 1.0,
-        type: 'image/webp', // Change the type to "image/png"
+        type: 'image/png',
         errorCorrectionLevel: 'H',
         margin: 3,
         scale:10,
