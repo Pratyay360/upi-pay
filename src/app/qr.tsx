@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import Image from "next/image"
-import data from "../../data.json"
-import upiqr from "./upiqr"
+import data from "../data.json"
+import upiqrcode from "upiqrcode";
 
 export default function Qr() {
     const [qrCode, setQrCode] = useState("");
 
     useEffect(() => {
-        upiqr({
+        upiqrcode({
             payeeVPA: data.UPI,
             payeeName: data.NAME,
         })
