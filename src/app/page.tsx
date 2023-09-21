@@ -1,6 +1,5 @@
 "use client"
-import Image from 'next/image'
-import Body from './qrandcomponent/index';
+import Body from './index';
 export default function Home() {
   return (
    <>
@@ -9,7 +8,7 @@ export default function Home() {
           <meta charSet="utf-8" />
           <meta name="description" content="Upi donation" />
     </header>
-    <div>
+    <div >
       <Body />
     </div>
     
