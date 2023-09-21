@@ -1,4 +1,5 @@
 import QRCode from 'qrcode'
+import Qr from './qr';
 interface UpiqrParams {
     payeeVPA?: string;
     payeeName?: string;
@@ -60,8 +61,14 @@ return new Promise<UpiqrResult>((resolve, reject) => {
     if (tr !== undefined) intent = buildUrl.call(intent, { tr });
     if (tn !== undefined) intent = buildUrl.call(intent, { tn });
     if (intent !== undefined) intent = intent.substring(0, intent.length - 1);
+    
+    var opts ={
+        quality: 1.0,
+        type: 'image/webp',
+        errorCorrectionLevel: 'H',
+    }
 
-    QRCode.toDataURL(intent, (err: any, qr: any) => {
+    QRCode.toDataURL(intent, opts, (err:null, qr:string) => {
         if (err) reject(new Error("Unable to generate UPI QR Code."));
         resolve({ qr, intent });
     });
