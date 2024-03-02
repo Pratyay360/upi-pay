@@ -3,14 +3,16 @@ import data from "../data.json";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 export default function BlockFalse() {
     const submit = () => {
-        const upiId = (document.getElementById('upi-id') as HTMLInputElement).value;
-        const name = (document.getElementById('name') as HTMLInputElement).value;
-        const money = (document.getElementById('money') as HTMLInputElement).value || "0";
+        const upiId = (document.getElementById('upi-id') as HTMLInputElement).value
+        const name = (document.getElementById('name') as HTMLInputElement).value
+        let money = (document.getElementById('money') as HTMLInputElement).value
+        if (isNaN(Number(money))) {
+            money = "0";
+        }
         if (upiId && name) {
             data.UPI = upiId;
             data.NAME = name;
             data.MONEY = money;
-            data.NOTE = "Payment for " + name;
             var r = document.getElementById("error") as HTMLHeadElement;
             var link = "upiid=" + data.UPI + "&name=" + data.NAME + "&money=" + data.MONEY;  
             r.innerHTML = '<a href="/?' + link + '"><h1>link</h1></a>';

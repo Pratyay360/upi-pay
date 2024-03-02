@@ -11,7 +11,7 @@ export default function BlockTrue() {
             payeeVPA: jso.UPI || "",
             payeeName: jso.NAME || "",
             amount: jso.MONEY || "",
-            transactionNote: jso.NOTE || "",
+            transactionNote: jso.NOTE,
         })
             .then((upi: { qr: string, intent: string }) => {
                 setQrCode(upi.qr);
