@@ -1,4 +1,4 @@
-// import Qr from './qr';
+'use client'
 import { useState, useEffect } from "react";
 import Image from "next/image"
 import data from "../data.json"
@@ -10,8 +10,14 @@ export default function Body() {
     const searchParams = useSearchParams();
     const id = searchParams.get("upiid");
     const name = searchParams.get("name");
+    const money = searchParams.get("money");
     data.UPI = id || "";
     data.NAME = name || "";
+    if(isNaN(Number(money))){
+        data.MONEY = "0";
+    }else{
+        data.MONEY = money || "";
+    }
     return (
         <>
             <script>

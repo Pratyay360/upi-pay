@@ -1,4 +1,6 @@
 {
     "UPI" : "",
-    "NAME" : ""
+    "NAME" : "",
+    "MONEY" : "",
+    "NOTE" : "Payment through upi"
 }

@@ -13,9 +13,13 @@
 
 <br/>
 
+# How to use the api
+
+Link: https://upi-pratyay.vercel.app/?upiid=<upi-id>&name=<name>&money=<amount>
+
 # How to host this?
 
-### For deploying this project online I suggest using vercel as they provide a generous free tire for deploying next.js apps.
+### For deploying this project online I suggest using vercel or netlify as they provide a generous free tire for deploying next.js apps.
 
 
 
