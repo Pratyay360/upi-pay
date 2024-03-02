@@ -15,7 +15,7 @@
 
 # How to use the api
 
-Link: https://upi-pratyay.vercel.app/?upiid=pratyaymustafi@paytm&name=Pratyay%Mustafi&money=100
+Link: https://upi-pratyay.vercel.app/?upiid=<upi-id>&name=<name>&money=<amount>
 
 # How to host this?
 
