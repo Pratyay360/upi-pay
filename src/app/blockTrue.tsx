@@ -10,6 +10,8 @@ export default function BlockTrue() {
         upiqrcode({
             payeeVPA: jso.UPI || "",
             payeeName: jso.NAME || "",
+            amount: jso.MONEY || "",
+            transactionNote: jso.NOTE || "",
         })
             .then((upi: { qr: string, intent: string }) => {
                 setQrCode(upi.qr);
@@ -44,7 +46,7 @@ export default function BlockTrue() {
                             </div>
                             <div className="text-center justify-center place-content-center items-center mt-5 text-xl/2">
                                 <p>Scan the QR code</p>
-                                <p> or use the UPI ID:</p>
+                                {jso.MONEY != "0"? <p>Amount: <strong>₹ {jso.MONEY}</strong> </p> : <></>}
                                 <div className="upi-id-content">
                                     <div className="text-red-700 text-xl">
                                         <strong id="upi-id">{jso.UPI}</strong>

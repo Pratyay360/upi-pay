@@ -10,8 +10,10 @@ export default function Body() {
     const searchParams = useSearchParams();
     const id = searchParams.get("upiid");
     const name = searchParams.get("name");
+    const money = searchParams.get("money");
     data.UPI = id || "";
     data.NAME = name || "";
+    data.MONEY = money || "";
     return (
         <>
             <script>
