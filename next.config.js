@@ -9,7 +9,4 @@ module.exports = {
       { hostname: "private-user-images.githubusercontent.com" },
     ],
   },
-  experimental: {
-    missingSuspenseWithCSRBailout: false,
-  },
 };
