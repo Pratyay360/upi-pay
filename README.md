@@ -15,7 +15,7 @@
 
 # How to use the api
 
-Link: https://upi-pratyay.vercel.app/?upiid=<upi-id>&name=<name>&money=<amount>
+Link: https://upi-pay.pages.dev/?upiid=<upi-id>&name=<name>&money=<amount>
 
 # How to host this?
 
